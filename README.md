@@ -5,6 +5,8 @@ application up and running.
 
 Things you may want to cover:
 
+Prueba para user github con ramas y todo eso.
+
 * Ruby version
 
 * System dependencies

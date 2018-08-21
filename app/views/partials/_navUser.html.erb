@@ -1,0 +1,50 @@
+<!-- Esta es la barra de navegación del estudiante: vacantes, editar perfil y cerrar sesión -->
+<nav>
+    <div class="nav-wrapper">
+
+
+      <a class="brand-logo"> <%=image_tag('faurecia_blanco.png',height:"22", width:"140", alt:"Faurecia") %> </a>
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <!-- Menu escritorio  -->
+      <ul class="right hide-on-med-and-down">
+        <li>
+            <%= link_to "instrucciones" , root_path, class:"white-text right-space"%>
+        </li>
+
+        <li>
+            <%= link_to "canjear puntos" , root_path, class:"white-text right-space"%>
+        </li>
+
+        <li>
+            <%= link_to "rating" , root_path, class:"white-text right-space"%>
+        </li>
+
+        <li>
+            <%= link_to "recomendados" , root_path, class:"white-text right-space"%>
+        </li>
+
+        <li>
+            <%= link_to "nuevo recomendado" , root_path, class:"white-text right-space"%>
+        </li>
+
+        <li>  <%= link_to "Sign out" , destroy_user_session_path, method: :delete ,class:"white-text"%>   </li>
+      </ul>
+
+      <!-- Menu para telefono  -->
+      <ul class="side-nav" id="mobile-demo">
+        <li class = "logo"> <h4 class="pink-text text-center">Menu</h4> </li>
+        
+        <li>
+            <%= link_to "prueba" , root_path, class:"white-text right-space"%>
+        </li>
+        <li>  <%= link_to "Sign out" , destroy_user_session_path, method: :delete ,class:"white-text"%>   </li>
+
+
+      </ul>
+
+
+    </div>
+
+ </nav>
